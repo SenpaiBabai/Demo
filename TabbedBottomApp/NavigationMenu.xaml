@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:tabbedbottomapp="clr-namespace:TabbedBottomApp"
+            mc:Ignorable="d"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" xmlns:tabbedbottomapp1="clr-namespace:TabbedBottomApp.View"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+             x:Class="TabbedBottomApp.NavigationMenu"
+             >
+    <!--Pages can be added as references or inline-->
+    <tabbedbottomapp1:StaartuperView Title="Дом"></tabbedbottomapp1:StaartuperView>
+    <tabbedbottomapp:CreateRequest Title="Запрос"></tabbedbottomapp:CreateRequest>
+    <tabbedbottomapp:Like Title="Понравившееся"></tabbedbottomapp:Like>
+    <tabbedbottomapp:Profile Title="Профиль"></tabbedbottomapp:Profile>
+</TabbedPage>

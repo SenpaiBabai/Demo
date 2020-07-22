@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TabbedBottomApp.View.StaartuperView">
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="10">
+            <Label Text="Варианты инвестиций" FontSize="34"></Label>
+            <ListView x:Name="listStartupers" ItemsSource="{Binding Startupers}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextCell Text="{Binding Topic}" TextColor="Purple"
+                                  Detail="{Binding StartuperName}" DetailColor="Maroon"/>-->
+                        <ImageCell ImageSource="{Binding ImageURL}" Text="{Binding Topic}" TextColor="Purple"
+                                  Detail="{Binding SturtuperName}" DetailColor="Maroon"/>
+                        
+
+                        <!--<ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Spacing="5">
+                                    <Label Text="{Binding Topic}" FontSize="20" TextColor="Azure"/>
+                                    <Image Source="{Binding ImageURL}"
+                                           WidthRequest="150" HeightRequest="150"/>
+                                    <Label Text="{Binding StartuperName}" FontSize="18"/>
+                                    <Label Text="{Binding ShortDescription}" FontSize="18"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
